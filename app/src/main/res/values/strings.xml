@@ -21,6 +21,15 @@
     <string name="login_with_face">Login with Facebook</string>
     <string name="link_sign_up">Sign Up for EzChat</string>
 
+    <!--FacebookLogin-->
+    <string name="facebook_app_id">2402662173078831</string>
+    <string name="fb_login_protocol_scheme">fb2402662173078831</string>
+
+    <!--Login Failed-->
+    <string name="login_failed">The password you entered is incorrect. Please try again.</string>
+    <string name="login_failed_title">Incorrect Password</string>
+    <string name="login_failed_ok">OK</string>
+
     <!--Description-->
     <string name="friend_found">Friend found</string>
     <string name="logout">Log out</string>
