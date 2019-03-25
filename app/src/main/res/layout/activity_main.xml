@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorGrey"
+    tools:context=".MainActivity">
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline_hz1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.25" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline_hz2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.8" />
+
+    <include
+        android:id="@+id/include_toolbar"
+        layout="@layout/custom_toolbar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/edit_fullname"
+        style="@style/fieldStyle"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_48dp"
+        android:hint="@string/full_name"
+        android:inputType="text"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/guideline_hz1" />
+
+    <TextView
+        android:id="@+id/text_birthday"
+        style="@style/fieldStyle"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_48dp"
+        android:layout_marginTop="@dimen/margin8dp"
+        android:hint="@string/birthday"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/edit_fullname" />
+
+    <TextView
+        android:id="@+id/text_gender"
+        style="@style/genderStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/size_48dp"
+        android:layout_marginTop="@dimen/margin8dp"
+        android:gravity="center_vertical"
+        android:text="@string/gender"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_birthday" />
+
+    <RadioGroup
+        android:id="@+id/radio_groups"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/size_48dp"
+        android:layout_marginLeft="@dimen/size_48dp"
+        android:layout_marginRight="@dimen/margin16dp"
+        android:layout_marginTop="@dimen/margin8dp"
+        android:gravity="center_vertical|center"
+        android:orientation="horizontal"
+        android:weightSum="3"
+        app:layout_constraintLeft_toRightOf="@+id/text_gender"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_birthday">
+
+        <RadioButton
+            android:id="@+id/radio_male"
+            style="@style/commonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/male" />
+
+        <RadioButton
+            android:id="@+id/radio_female"
+            style="@style/commonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/female" />
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/edit_email"
+        style="@style/fieldStyle"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_48dp"
+        android:layout_marginTop="@dimen/margin8dp"
+        android:hint="@string/email"
+        android:inputType="textEmailAddress"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text_gender" />
+
+    <EditText
+        android:id="@+id/edit_password"
+        style="@style/fieldStyle"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_48dp"
+        android:layout_marginTop="@dimen/margin8dp"
+        android:hint="@string/password"
+        android:inputType="text"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/edit_email" />
+
+    <EditText
+        android:id="@+id/edit_confirm_password"
+        style="@style/fieldStyle"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_48dp"
+        android:layout_marginTop="@dimen/margin8dp"
+        android:hint="@string/confirm_password"
+        android:inputType="text"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/edit_password" />
+
+    <Button
+        android:id="@+id/button_signUp"
+        style="@style/ButtonSignUpStyle"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_56dp"
+        android:layout_marginLeft="@dimen/margin16dp"
+        android:layout_marginRight="@dimen/margin16dp"
+        android:text="@string/sign_up"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/guideline_hz2" />
+</android.support.constraint.ConstraintLayout>

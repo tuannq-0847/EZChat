@@ -1,0 +1,44 @@
+<resources>
+    <string name="app_name">EzChat</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="full_name">Full name</string>
+    <string name="birthday">Birthday</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="confirm_password">Confirm password</string>
+    <string name="gender">Gender</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="search">Search</string>
+    <string name="address">Address</string>
+    <string name="Age">Age: 24</string>
+
+    <!--Login-->
+    <string name="logoApp">EZCHAT</string>
+    <string name="welcome">Welcome to EzChat</string>
+    <string name="login">Login</string>
+    <string name="or">OR</string>
+    <string name="login_with_face">Login with Facebook</string>
+    <string name="link_sign_up">Sign Up for EzChat</string>
+
+    <!--Description-->
+    <string name="friend_found">Friend found</string>
+    <string name="logout">Log out</string>
+    <string name="previous">Back</string>
+    <!--Profile-->
+    <string name="lipsum_short">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        Nullam cursus sem et ante rhoncus pharetra. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+        Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+        Curabitur lacinia mattis quam, non laoreet felis vestibulum ac. Curabitur pharetra vel est quis cursus.
+        Etiam faucibus turpis in nunc semper sollicitudin. Nam fermentum commodo ligula. Aliquam a tellus sollicitudin,
+        ultricies est ac, porta ante. Nam aliquet mi nulla, ut laoreet nunc vestibulum ut. Quisque non purus urna.
+        Aliquam sed porta lectus. In a ipsum varius, imperdiet magna in, hendrerit arcu. Donec porta, nulla non viverra sollicitudin,
+        nisl mi suscipit nisl, nec pellentesque est mi ut neque. Duis viverra laoreet nibh at malesuada.
+        Lor, quis congue vestibulum aliquam interdum etiam. Nulla vel lobortis ullamcorper vitae excepturi, neque urna feugiat lectus vel lacinia, massa pretium orci eu metus neque vulputate. Imperdiet ac velit rhoncus nulla malesuada nullam,
+        nec pulvinar habitasse repudiandae mi eros vestibulum ante, nec euismod dui iaculis in turpis pretium justo gravida lorem rutrum magna,
+        ac id metus egestas proin lacus lectus isl mi suscipit nisl, nec pellentesque est mi ut neque. Duis viverra laoreet nibh at malesuada.
+        Lor, quis congue vestibulum aliquam interdum etiam. Nulla vel lobortis ullamcorper vitae excepturi, neque urna feugiat lectus vel lacinia, massa pretium orci eu metus neque vulputate. Imperdiet ac velit rhoncus nulla malesuada nullam,
+        nec pulvinar habitasse repudiandae mi eros vestibulum ante, nec euismod dui iaculis in turpis pretium justo gravida lorem rutrum magna,</string>
+    <string name="sticky_header">Sticky</string>
+</resources>
+

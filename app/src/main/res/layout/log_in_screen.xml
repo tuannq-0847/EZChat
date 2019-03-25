@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorSecondBlue"
+    android:padding="@dimen/padding16dp">
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/constraint_logo"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintHeight_percent="0.25"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/text_logo_app"
+            style="@style/logoAppStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:text="@string/logoApp"
+            app:layout_constraintBottom_toTopOf="@+id/text_welcome"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_chainStyle="packed" />
+
+        <TextView
+            android:id="@+id/text_welcome"
+            style="@style/profileStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/welcome"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/text_logo_app" />
+    </android.support.constraint.ConstraintLayout>
+
+    <EditText
+        android:id="@+id/text_email_login"
+        style="@style/EmailPassLoginStyle"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/size_48dp"
+        android:hint="@string/email"
+        android:paddingLeft="@dimen/padding16dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/constraint_logo" />
+
+    <EditText
+        android:id="@+id/text_pass_login"
+        style="@style/EmailPassLoginStyle"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/size_48dp"
+        android:layout_marginTop="@dimen/margin8dp"
+        android:hint="@string/password"
+        android:paddingLeft="@dimen/padding16dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text_email_login" />
+
+    <Button
+        android:id="@+id/button_login"
+        style="@style/ButtonLogin"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/size_56dp"
+        android:layout_marginTop="@dimen/margin16dp"
+        android:text="@string/login"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text_pass_login" />
+
+    <TextView
+        android:id="@+id/text_or"
+        style="@style/commonStyle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin16dp"
+        android:gravity="center"
+        android:text="@string/or"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/button_login" />
+
+    <Button
+        android:id="@+id/button_login_face"
+        style="@style/ButtonLoginface"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/size_56dp"
+        android:layout_marginTop="@dimen/margin16dp"
+        android:text="@string/login_with_face"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text_or" />
+
+    <TextView
+        style="@style/LinkSignUpStyle"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:clickable="true"
+        android:gravity="center"
+        android:text="@string/link_sign_up"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/button_login_face" />
+</android.support.constraint.ConstraintLayout>
